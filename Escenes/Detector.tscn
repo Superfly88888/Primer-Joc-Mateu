@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2e6qw1dwtbgu"]
+
+[ext_resource type="Script" uid="uid://d1scouto8llne" path="res://Script/detector.gd" id="1_u7xu0"]
+[ext_resource type="Texture2D" uid="uid://b0pek6h4wtrun" path="res://Imatges/233-2334439_lava-pixel-lava-art-png.png" id="2_r16wa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b0c2l"]
+size = Vector2(771, 139)
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_u7xu0")
+
+[node name="233-2334439Lava-pixel-lava-art-png" type="Sprite2D" parent="."]
+position = Vector2(11, -9)
+texture = ExtResource("2_r16wa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15, -19)
+shape = SubResource("RectangleShape2D_b0c2l")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

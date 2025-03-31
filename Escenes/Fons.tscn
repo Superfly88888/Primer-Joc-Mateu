@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dno3kq1skolc6"]
+
+[ext_resource type="Texture2D" uid="uid://b0pek6h4wtrun" path="res://Imatges/233-2334439_lava-pixel-lava-art-png.png" id="1_ikfas"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_belbe"]
+size = Vector2(1161, 148)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="233-2334439Lava-pixel-lava-art-png" type="Sprite2D" parent="."]
+position = Vector2(-1, 6)
+scale = Vector2(1.59333, 1.24375)
+texture = ExtResource("1_ikfas")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-10, -20)
+shape = SubResource("RectangleShape2D_belbe")

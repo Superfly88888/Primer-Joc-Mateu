@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://1ep3wate7hr1"]
+
+[ext_resource type="Script" uid="uid://7nn0i5fxqdpg" path="res://Script/Codi Bola.gd" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://bki8sygjpc270" path="res://Imatges/Bola2d-removebg-preview.png" id="2_belbe"]
+[ext_resource type="Texture2D" uid="uid://bqute2t6w05yk" path="res://Imatges/icon.svg" id="2_gyiwt"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(153, 130)
+texture = ExtResource("2_gyiwt")
+
+[node name="Bola2d-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(531, 204)
+texture = ExtResource("2_belbe")
+script = ExtResource("1_wtcfe")
