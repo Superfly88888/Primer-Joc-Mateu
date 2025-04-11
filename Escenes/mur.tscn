@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4j1y36uq8lxb"]
+
+[ext_resource type="Script" uid="uid://cp2okawebys1" path="res://Script/murs.gd" id="1_3p5r2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gyiwt"]
+size = Vector2(217.281, 36.5)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+script = ExtResource("1_3p5r2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 523.0
+offset_top = 201.0
+offset_right = 740.0
+offset_bottom = 237.0
+color = Color(0, 0, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(630.359, 220)
+shape = SubResource("RectangleShape2D_gyiwt")

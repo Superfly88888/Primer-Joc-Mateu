@@ -13,7 +13,6 @@ config_version=5
 config/name="Superfly"
 run/main_scene="uid://1ep3wate7hr1"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://Imatges/icon.svg"
 
 [display]
 

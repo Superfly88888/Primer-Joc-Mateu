@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("moure_dalt") and salts_disponibles > 0:
 		velocity.y += salt
-		salts_disponibles -= 0
+		salts_disponibles -= 1
 	
 	velocity += gravetat *  delta
 	move_and_slide()
@@ -29,3 +29,10 @@ func _process(delta: float) -> void:
 func anima(desplaçament: Vector2, delta: float):
 		rotation += desplaçament.x / 70*delta
 		rotation += desplaçament.x / 70 *delta
+
+func tocat():
+	visible = false
+	get_tree().paused = true
+
+func tocat2():
+	pass
